@@ -17,6 +17,10 @@ spring.datasource.username=yourusername
 spring.datasource.password=yourpassword
 ```
 
+3. Создайте контейнер с БД:
+
+`docker run --name deviceregistry-db -e POSTGRES_DB=deviceregistry -e POSTGRES_USER=user -e POSTGRES_PASSWORD=user -p 5432:5432 -d postgres:13`
+
 3. Run the application:
 
 `./mvnw spring-boot:run`
