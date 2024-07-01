@@ -10,14 +10,7 @@
 
 `git clone <repository-url>`
 
-2. Configure the database in `application.properties`:
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/deviceregistry
-spring.datasource.username=yourusername
-spring.datasource.password=yourpassword
-```
-
-3. Создайте контейнер с БД:
+2. Создайте контейнер с БД:
 
 `docker run --name deviceregistry-db -e POSTGRES_DB=deviceregistry -e POSTGRES_USER=user -e POSTGRES_PASSWORD=user -p 5432:5432 -d postgres:13`
 
